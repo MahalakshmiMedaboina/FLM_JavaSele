@@ -22,6 +22,32 @@ public class informationalMethodsDemo {
 		
 		System.out.println("Current URL of the page is: " + url);
 		
+		//open gmail.com using navigate().to() method
+		driver.navigate().to("https://www.google.com");
+		
+		System.out.println("New Title of the page is: " + driver.getTitle());
+		
+		//back & forward navigation using navigate().back() and navigate().forward() methods
+		
+		driver.navigate().back();
+		System.out.println("Title of the page after back navigation is: " + driver.getTitle());
+		
+		driver.navigate().forward();
+		System.out.println("Title of the page after forward navigation is: " + driver.getTitle());
+		
+		driver.navigate().refresh(); // refresh the page using navigate().refresh() method
+		
+		driver.quit(); // close the browser using quit() method
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 
 	}
