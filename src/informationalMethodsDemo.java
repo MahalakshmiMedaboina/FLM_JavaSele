@@ -41,6 +41,12 @@ public class informationalMethodsDemo {
 		
 		driver.navigate().refresh(); // refresh the page using navigate().refresh() method
 		
+		//get the page source length of the page using getPageSource() method and print the length of the page source
+		System.out.println("Length of the page source is: " + driver.getPageSource().length());
+		
+		//get the page source of the page using getPageSource() method
+//		System.out.println("Page source of the page is: " + driver.getPageSource()); // this will print the entire page source which is very long, so we will not print it here
+		
 		driver.quit(); // close the browser using quit() method
 		
 		
