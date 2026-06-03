@@ -47,7 +47,9 @@ public class informationalMethodsDemo {
 		//get the page source of the page using getPageSource() method
 //		System.out.println("Page source of the page is: " + driver.getPageSource()); // this will print the entire page source which is very long, so we will not print it here
 		
-		driver.quit(); // close the browser using quit() method
+		driver.close(); // closes current browser window using close() method
+		
+		driver.quit(); // closes all the browser windows opened by the driver using quit() method
 		
 		
 		
