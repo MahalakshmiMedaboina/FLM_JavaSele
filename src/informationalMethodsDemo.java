@@ -3,7 +3,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class informationalMethodsDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver = new EdgeDriver();
 		
@@ -27,13 +27,17 @@ public class informationalMethodsDemo {
 		
 		System.out.println("New Title of the page is: " + driver.getTitle());
 		
+		Thread.sleep(2000); // wait for 2 seconds
+		
 		//back & forward navigation using navigate().back() and navigate().forward() methods
 		
 		driver.navigate().back();
 		System.out.println("Title of the page after back navigation is: " + driver.getTitle());
+		Thread.sleep(2000); // wait for 2 seconds
 		
 		driver.navigate().forward();
 		System.out.println("Title of the page after forward navigation is: " + driver.getTitle());
+		Thread.sleep(2000); // wait for 2 seconds
 		
 		driver.navigate().refresh(); // refresh the page using navigate().refresh() method
 		
